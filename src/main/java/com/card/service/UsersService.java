@@ -7,5 +7,5 @@ import com.card.dto.auth.UserDto;
  * @project system-integration
  */
 public interface UsersService {
-    public UserDto createUser(UserDto user);
+    UserDto createUser(UserDto user);
 }

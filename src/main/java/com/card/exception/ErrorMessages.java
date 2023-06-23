@@ -6,12 +6,13 @@ package com.card.exception;
  */
 public enum ErrorMessages {
     MISSING_REQUIRED_FIELD("Missing required field, please check doc for the required fields"),
-    RECORD_ALREDY_EXISTS("Record already exists");
+    RECORD_ALREDY_EXISTS("Record already exists"),
+    INTERNAL_SERVER_ERROR("Internal server error");
 
     private String errorMessage;
 
     ErrorMessages(String errorMessage) {
-        errorMessage = errorMessage;
+        this.errorMessage = errorMessage;
     }
 
     public String getErrorMessage() {
@@ -19,6 +20,6 @@ public enum ErrorMessages {
     }
 
     public void setErrorMessage(String errorMessage) {
-        errorMessage = errorMessage;
+        this.errorMessage = errorMessage;
     }
 }
